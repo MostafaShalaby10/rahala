@@ -1,8 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rahala/core/enums.dart';
 import 'package:rahala/core/export.dart';
-import 'package:rahala/features/booking_details/presentation/bloc/booking_cubit.dart';
-import 'package:rahala/features/booking_details/presentation/pages/book_details.dart';
+import 'package:rahala/features/choose_booking_details/presentation/pages/book_details.dart';
+
+import '../../features/choose_booking_details/presentation/bloc/booking_cubit.dart';
 
 class CustomNavBar extends StatelessWidget {
   const CustomNavBar({super.key, required this.price, required this.section});
@@ -125,7 +126,7 @@ class CustomNavBar extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const BookDetails(),
+                        builder: (context) => const ChooseBookDetailsPage(),
                       ),
                     );
                   },

@@ -1,7 +1,8 @@
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rahala/core/export.dart';
-import 'package:rahala/features/booking_details/presentation/bloc/booking_cubit.dart';
+
+import '../bloc/booking_cubit.dart';
 
 class DateWidget extends StatefulWidget {
   const DateWidget({super.key});

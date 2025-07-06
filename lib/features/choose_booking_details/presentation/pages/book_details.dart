@@ -1,20 +1,20 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rahala/core/widgets/custom_nav_bar.dart';
-import 'package:rahala/features/booking_details/presentation/widget/date_widget.dart';
-import 'package:rahala/features/booking_details/presentation/widget/guests_widget.dart';
-import 'package:rahala/features/booking_details/presentation/widget/room_type_widget.dart';
 
 import '../../../../core/export.dart';
 import '../bloc/booking_cubit.dart';
+import '../widget/date_widget.dart';
+import '../widget/guests_widget.dart';
+import '../widget/room_type_widget.dart';
 
-class BookDetails extends StatefulWidget {
-  const BookDetails({super.key});
+class ChooseBookDetailsPage extends StatefulWidget {
+  const ChooseBookDetailsPage({super.key});
 
   @override
-  State<BookDetails> createState() => _BookDetailsState();
+  State<ChooseBookDetailsPage> createState() => _ChooseBookDetailsPageState();
 }
 
-class _BookDetailsState extends State<BookDetails> {
+class _ChooseBookDetailsPageState extends State<ChooseBookDetailsPage> {
   final List<DateTime?> _selectedDates = [];
 
   @override

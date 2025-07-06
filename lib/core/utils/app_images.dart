@@ -25,4 +25,8 @@ class AppImages {
   static const viewIcon = "${svgImage}view_icon.svg";
   static const wifiIcon = "${svgImage}wifi_icon.svg";
   static const notificationIcon = "${svgImage}notification_icon.svg";
+  static const homeIcon = "${svgImage}home.svg";
+  static const profileIcon = "${svgImage}profile.svg";
+  static const favoriteIcon = "${svgImage}heart.svg";
+  static const bookingIcon = "${svgImage}calender.svg";
 }

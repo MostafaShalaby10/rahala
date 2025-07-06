@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:rahala/features/home/presentation/pages/home_page.dart';
+
+import 'core/utils/app_colors.dart';
+import 'features/nav_bar/presentation/pages/nav_bar_view.dart';
 
 void main()
 {
@@ -16,9 +18,21 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return const MaterialApp(
+        return  MaterialApp(
+          theme: ThemeData(
+            scaffoldBackgroundColor: AppColors.white,
+
+
+            appBarTheme: AppBarTheme(
+              backgroundColor: AppColors.white,
+              centerTitle: true ,
+              shape: Border(
+                bottom: BorderSide(color: AppColors.shark50)
+              )
+            )
+          ),
           debugShowCheckedModeBanner: false,
-          home: HomePage(),
+          home: NavBarView(),
         );
       },
     );

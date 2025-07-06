@@ -68,6 +68,7 @@ class TopPickWidget extends StatelessWidget {
                               radius: 16,
 
                               child: IconButton(
+                                padding: EdgeInsetsGeometry.symmetric(vertical: 0 , horizontal: 0),
                                 onPressed: () {},
                                 icon: const Icon(
                                   Icons.favorite_border,
